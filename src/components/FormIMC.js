@@ -1,8 +1,9 @@
-import { View, TextInput, Button, StyleSheet, Text } from 'react-native';
+import { View, TextInput, Button ,StyleSheet, Text } from 'react-native';
 import React, { useState } from 'react';
 import Result from './Result';
 import exibirClassificacao from './Classification';
 import exibirPesoIdeal from './IdealWeight';
+import CustomButton from './CustomButton';
 //importo a função exibirClassificacao que está no arquivo Classification.js para ser definida aqui
 
 const FormIMC = () => {
@@ -32,6 +33,7 @@ const FormIMC = () => {
     //foi desenvolvida essa função como um extra de aprendizado, que é um botão que delete os dados 
     //já inseridos anteriormente para não ficar exibindo os resultados estáticos na tela, alterando 
     //somente seu valor
+
     const limparResultado = () => {
         setresultado(null);
         setpesoMin('');
@@ -57,11 +59,9 @@ const FormIMC = () => {
                 value={altura}
                 onChangeText={setAltura}
             />
-            <Button title="Calcular IMC" onPress={calcularIMC} />
-            {/* acrescentei o botão que, quando pressionado, ele irá invocar a 
-            função limparResultado, que irá limpar os dados inseridos anteriormente */}
-            <Button title="Apagar resultado" onPress={limparResultado} color="red" />
-            {imc && <Result imc={imc} resultado={resultado} pesoMax={pesoMax} pesoMin={pesoMin} />}
+            <CustomButton title="Calcular IMC" onPress={calcularIMC} style={styles.buttonCalculate} />
+            <CustomButton title="Limpar" onPress={limparResultado} style={styles.buttonDelete}/>
+            {imc && <Result imc={imc} resultado={resultado} pesoMax={pesoMax} pesoMin={pesoMin}/>}
 
             {/* 
                 nessa parte final do return, eu verifico se há um valor verdadeiro para o IMC. Se tiver, ele 
@@ -75,17 +75,24 @@ const FormIMC = () => {
 
 const styles = StyleSheet.create({
     formContainer: {
-        backgroundColor: '#f0f0f0',
+        backgroundColor: '#e6ebcb',
         padding: 16,
-        borderRadius: 10,
+        borderRadius: 25,
     },
     input: {
         height: 40,
         borderColor: 'gray',
+        backgroundColor: '#f0f0f0',
         borderWidth: 1,
         marginBottom: 12,
         paddingHorizontal: 8,
         borderRadius: 5,
+    },
+    buttonCalculate: {
+        backgroundColor: '#9aaf6e',
+    },
+    buttonDelete: {
+        backgroundColor: '#D22B2B',
     },
 });
 //export deixa esse arquivo/função visivel para importar em outros arquivos/funções
