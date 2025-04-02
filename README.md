@@ -63,7 +63,7 @@ Para instalar o Node.js, você pode seguir os passos abaixo:
 
 Para utilizar o projeto, é necessário ter o React Native e Expo instalados no seu computador. Você pode seguir os passos abaixo:
 
-1. Acesse o site oficial do React Native: <https://reactnative.dev/docs/get>
+1. Acesse o site oficial do React Native: <https://reactnative.dev/docs/environment-setup>
 2. Clique no botão "_Download_" e selecione a versão correta para o seu sistema operacional.
 3. Execute o arquivo de instalação e siga as instruções para instalar o React Native.
 4. Após a instalação, abra o terminal ou prompt de comando e digite o comando `npm install expo-cli --global` para instalar o Expo CLI globalmente (fora do projeto, em sua máquina).
@@ -137,7 +137,7 @@ To install Node.js, you can follow the steps below:
 
 To use the project, you need to have React Native and Expo installed on your computer. You can follow the steps below:
 
-1. Access the official React Native website: <https://reactnative.dev/docs/get>
+1. Access the official React Native website: <https://reactnative.dev/docs/environment-setup>
 2. Click the "_Download_" button and select the correct version for your operating system.
 3. Run the installation file and follow the instructions to install React Native.
 4. After installation, open the terminal or command prompt and type the command `npm install expo-cli --global` to install Expo CLI globally (outside the project, on your machine).
