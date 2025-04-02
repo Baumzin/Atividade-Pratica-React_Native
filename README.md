@@ -17,15 +17,18 @@ O objetivo desse projeto é desenvolvermos um aplicativo mobile que calcule o IM
 
 ## Resolução da proposta
 
-Para resolver a proposta, foi necessário criar um aplicativo mobile com as seguintes funcionalidades: calcular o IMC do usuário, exibir a classificação do IMC do usuário e exibir o peso mínimo e peso máximo ideal para o usuário.
+Para resolver a proposta, foi necessário criar um aplicativo mobile com as seguintes funcionalidades: 
+- calcular o IMC do usuário
+- exibir a classificação do IMC do usuário 
+- exibir o peso mínimo e peso máximo ideal para o usuário.
 
 ### Calculo do IMC
 
-Para calcular o IMC do usuário, foi necessário criar uma função que recebesse a altura e o peso do usuário e retornasse o IMC calculado. A fórmula para calcular o IMC é: `IMC = peso / (altura)².`
+Para calcular o IMC do usuário, foi necessário criar uma função que recebesse a altura e o peso do usuário e retornasse o IMC calculado. A fórmula para calcular o IMC é: `IMC = peso(em kilos) / (altura em metros)².`
 
 ### Exibição da classificação do IMC
 
-Para exibir a classificação do IMC do usuário, foi necessário criar uma função que recebesse o IMC calculado e retornasse a classificação do IMC. A classificação do IMC é definida pela Organização Mundial da Saúde (OMS) e é a seguinte:
+Para exibir a classificação do IMC do usuário, foi necessário criar uma função que recebesse o IMC calculado e retornasse a classificação do IMC. Essa classificação é definida pela Organização Mundial da Saúde (OMS) e é a seguinte:
 
 - **IMC < 18,5**: Magreza
 - **Normal**: IMC entre 18,5 e 24,9
@@ -37,7 +40,7 @@ Para exibir a classificação do IMC do usuário, foi necessário criar uma fun�
 Para exibir o peso mínimo e peso máximo ideal para o usuário, foi necessário criar uma função que recebesse o IMC calculado e retornasse o peso mínimo e peso máximo ideal. O
 peso mínimo e peso máximo ideal foram calculados com base na fórmula: 
 
-- `peso_minimo = 18.5 x (altua em metros)²`
+- `peso_minimo = 18.5 x (altura em metros)²`
 - `peso_maximo = 24.9 x (altura em metros)²`.
 
 # Utilizando o projeto
@@ -68,7 +71,7 @@ Para utilizar o projeto, é necessário ter o React Native e Expo instalados no 
 3. Execute o arquivo de instalação e siga as instruções para instalar o React Native.
 4. Após a instalação, abra o terminal ou prompt de comando e digite o comando `npm install expo-cli --global` para instalar o Expo CLI globalmente (fora do projeto, em sua máquina).
 5. Após clonar o projeto, abra o terminal ou prompt de comando e digite o comando `cd` para entrar no diretório do projeto (O projeto clonado).
-6. Após a instalação, abra o terminal ou prompt de comando e digite o comando `expo start --tunnel` para iniciar o projeto. (o `--tunnel` serve para que o seu computador e o celular não precisem estar na mesma rede de internet para funcionar).
+6. Após a instalação, abra o terminal ou prompt de comando e digite o comando `expo start --tunnel` para iniciar o projeto. (o `--tunnel` serve para que o seu computador e o celular que estão conectados não precisem estar na mesma rede de internet para funcionar).
 7. Após a inicialização, abra o aplicativo mobile e escaneie o QR CODE que será exibido no terminal ou prompt de comando.
 
 ---
@@ -92,15 +95,18 @@ The objective of this project is to develop a mobile application that calculates
 
 ## Resolution of the proposal
 
-To resolve the proposal, it was necessary to create a mobile application with the following functionalities: calculate the user's BMI, display the user's BMI classification, and display the ideal minimum and maximum weight for the user.
+To resolve the proposal, it was necessary to create a mobile application with the following functionalities: 
+- calculate the user's BMI
+- display the user's BMI classification 
+- display the ideal minimum and maximum weight for the user.
 
 ### Calculating the BMI
 
-To calculate the user's BMI, it was necessary to create a function that would receive the user's height and weight and return the calculated BMI. The formula for calculating the BMI is: `BMI = weight / (height)².`
+To calculate the user's BMI, it was necessary to create a function that would receive the user's height and weight and return the calculated BMI. The formula for calculating the BMI is: `BMI = weight(kg) / (height in meters)².`
 
 ### Displaying the BMI classification
 
-To display the user's BMI classification, it was necessary to create a function that would receive the calculated BMI and return the BMI classification. The BMI classification is defined by the World Health Organization (WHO) and is as follows:
+To display the user's BMI classification, it was necessary to create a function that would receive the calculated BMI and return the BMI classification. The classification is defined by the World Health Organization (WHO) and is as follows:
 
 - **Thinness**: BMI less than 18.5
 - **Normal**: BMI between 18.5 and 24.9
@@ -142,5 +148,5 @@ To use the project, you need to have React Native and Expo installed on your com
 3. Run the installation file and follow the instructions to install React Native.
 4. After installation, open the terminal or command prompt and type the command `npm install expo-cli --global` to install Expo CLI globally (outside the project, on your machine).
 5. After cloning the project, open the terminal or command prompt and type the command `cd` to enter the project directory (the cloned project).
-6. After installation, open the terminal or command prompt and type the command `expo start --tunnel` to start the project. (`--tunnel` is used so that your computer and cell phone do not need to be on the same internet network to work).
+6. After installation, open the terminal or command prompt and type the command `expo start --tunnel` to start the project. (`--tunnel` it's used so that your computer and cell phone that are connected do not need to be on the same internet network to work).
 7. After starting, open the mobile application and scan the QR CODE that will be displayed in the terminal or command prompt.
