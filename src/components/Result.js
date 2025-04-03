@@ -6,7 +6,6 @@ const Result = ({ imc, resultado, pesoMin, pesoMax }) => {
         <View>
             <Text style={styles.result}>Seu IMC é: {imc}</Text>
             <Text style={styles.result}>Seu peso é: {resultado}</Text>
-            <Text style={styles.result}>Seu peso ideal deve estar entre: {pesoMin}kg e {pesoMax}kg</Text>
         </View>
     );
 };

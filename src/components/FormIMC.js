@@ -1,4 +1,4 @@
-import { View, TextInput, Button ,StyleSheet, Text } from 'react-native';
+import { View, TextInput ,StyleSheet, } from 'react-native';
 import React, { useState } from 'react';
 import Result from './Result';
 import exibirClassificacao from './Classification';
@@ -12,8 +12,8 @@ const FormIMC = () => {
     const [altura, setAltura] = useState('');
     const [imc, setImc] = useState(null);
     const [resultado, setresultado] = useState(null);
-    const [pesoMin, setpesoMin] = useState('');
-    const [pesoMax, setpesoMax] = useState('');
+    const [pesoMin, setpesoMin] = useState(null);
+    const [pesoMax, setpesoMax] = useState(null);
 
     //função para calcular o IMC
     const calcularIMC = () => {
@@ -24,7 +24,7 @@ const FormIMC = () => {
             //aqui estou fornecendo as informações para a função importada de Classification retornar o valor
             //do peso ideal 
             exibirClassificacao(imcCalculado, setresultado)
-            exibirPesoIdeal(imcCalculado, alturaMetros, setresultado, setpesoMax, setpesoMin)
+            exibirPesoIdeal(imcCalculado, alturaMetros,)
         } else {
             //caso o usuário não tenha preenchido os campos, exibe uma mensagem
             alert('Preencha todos os campos');
