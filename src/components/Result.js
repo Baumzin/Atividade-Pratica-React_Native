@@ -13,6 +13,7 @@ const Result = ({ imc, resultado, pesoMin, pesoMax }) => {
 };
 
 const styles = StyleSheet.create({
+    //parte CSS do arquivo
     IMC: {
         marginTop: 20,
         fontSize: 24,

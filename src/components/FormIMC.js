@@ -53,6 +53,7 @@ const FormIMC = () => {
     }
 
     return (
+        //parte CSS do arquivo
         <View style={styles.formContainer}>
             <TextInput
                 style={styles.input}
@@ -83,6 +84,7 @@ const FormIMC = () => {
 };
 
 const styles = StyleSheet.create({
+    //parte CSS do arquivo
     formContainer: {
         backgroundColor: '#e6ebcb',
         padding: 16,

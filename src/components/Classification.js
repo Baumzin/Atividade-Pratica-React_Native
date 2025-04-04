@@ -1,6 +1,3 @@
-//eu importo o arquivo Result.js para o resultado da função retornar o valor almejado e que ele seja exposto no Result
-
-//passo os parametros presentes no arquivo FormIMC para utilizá-los aqui
 const exibirClassificacao = ({imc, setresultado}) => {
 
     const imcFloat = parseFloat(imc);
