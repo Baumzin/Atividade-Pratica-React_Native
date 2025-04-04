@@ -1,4 +1,4 @@
-import { View, TextInput ,StyleSheet, } from 'react-native';
+import { View, TextInput, StyleSheet, } from 'react-native';
 import React, { useState } from 'react';
 import Result from './Result';
 import exibirClassificacao from './Classification';
@@ -21,10 +21,19 @@ const FormIMC = () => {
             const alturaMetros = parseFloat(altura) / 100;
             const imcCalculado = (parseFloat(peso) / (alturaMetros * alturaMetros)).toFixed(2); //toFixed(número de casas decimais) limita o número de casas decimais do número resultante
             setImc(imcCalculado);
-            //aqui estou fornecendo as informações para a função importada de Classification retornar o valor
-            //do peso ideal 
-            exibirClassificacao(imcCalculado, setresultado)
-            exibirPesoIdeal(imcCalculado, alturaMetros,)
+
+            exibirClassificacao({
+                //declarando os parâmetros a serem passados para a função:
+                imc: imcCalculado,
+                setresultado: setresultado
+            });
+
+            exibirPesoIdeal({
+                //declarando os parâmetros a serem passados para a função:
+                alturaMetros: alturaMetros,
+                setPesoMax: setpesoMax,
+                setPesoMin: setpesoMin,
+            });
         } else {
             //caso o usuário não tenha preenchido os campos, exibe uma mensagem
             alert('Preencha todos os campos');
@@ -60,8 +69,8 @@ const FormIMC = () => {
                 onChangeText={setAltura}
             />
             <CustomButton title="Calcular IMC" onPress={calcularIMC} style={styles.buttonCalculate} />
-            <CustomButton title="Limpar" onPress={limparResultado} style={styles.buttonDelete}/>
-            {imc && <Result imc={imc} resultado={resultado} pesoMax={pesoMax} pesoMin={pesoMin}/>}
+            <CustomButton title="Limpar" onPress={limparResultado} style={styles.buttonDelete} />
+            {imc && <Result imc={imc} resultado={resultado} pesoMax={pesoMax} pesoMin={pesoMin} />}
 
             {/* 
                 nessa parte final do return, eu verifico se há um valor verdadeiro para o IMC. Se tiver, ele 

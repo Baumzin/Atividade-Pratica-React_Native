@@ -1,7 +1,7 @@
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
-//Aqui eu passo como parametro o titulo dos botões, a estilização do texto deles e do próprio botão além de
+//Aqui eu passo como parametro o titulo dos botões, a estilização do texto deles e do próprio botão 
 const CustomButton = ({ title, onPress, style }) => {
     return (
         <TouchableOpacity onPress={onPress} style={[styles.button, style]}>
