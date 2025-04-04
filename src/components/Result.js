@@ -5,7 +5,7 @@ const Result = ({ imc, resultado, pesoMin, pesoMax }) => {
     return (
         <View>
             <Text style={styles.IMC}>Seu IMC: {imc}</Text>
-            <Text style={styles.peso}>Seu peso : {resultado}</Text>
+            <Text style={styles.peso}>Classificação: {resultado}</Text>
             <Text style={styles.pesoMaxEMin}>Peso minimo ideal: {pesoMin}kg</Text>
             <Text style={styles.pesoMaxEMin}>Peso máximo ideal: {pesoMax}kg</Text>
         </View>

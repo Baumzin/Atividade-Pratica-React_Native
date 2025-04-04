@@ -12,8 +12,8 @@ const FormIMC = () => {
     const [altura, setAltura] = useState('');
     const [imc, setImc] = useState(null);
     const [resultado, setresultado] = useState(null);
-    const [pesoMin, setpesoMin] = useState(null);
-    const [pesoMax, setpesoMax] = useState(null);
+    const [pesoMin, setPesoMin] = useState(null);
+    const [pesoMax, setPesoMax] = useState(null);
 
     //função para calcular o IMC
     const calcularIMC = () => {
@@ -31,8 +31,8 @@ const FormIMC = () => {
             exibirPesoIdeal({
                 //declarando os parâmetros a serem passados para a função:
                 alturaMetros: alturaMetros,
-                setPesoMax: setpesoMax,
-                setPesoMin: setpesoMin,
+                setPesoMax: setPesoMax,
+                setPesoMin: setPesoMin,
             });
         } else {
             //caso o usuário não tenha preenchido os campos, exibe uma mensagem
@@ -45,8 +45,8 @@ const FormIMC = () => {
 
     const limparResultado = () => {
         setresultado(null);
-        setpesoMin('');
-        setpesoMax('');
+        setPesoMin('');
+        setPesoMax('');
         setImc(null);
         setAltura('');
         setPeso('')
