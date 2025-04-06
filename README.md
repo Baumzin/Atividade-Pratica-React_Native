@@ -2,7 +2,7 @@
 
 # Atividade desenvolvida com JS e React Native
 
-### [Cliquem aqui e vejam o meu projeto em funcionamento!](https://youtube.com/shorts/9WNIqWhZKpo)
+### [Cliquem aqui e vejam o meu projeto em funcionamento!](https://youtube.com/shorts/LERpNAIqnjg)
 
 ## Tecnologias utilizadas
 
@@ -80,7 +80,7 @@ Para utilizar o projeto, é necessário ter o React Native e Expo instalados no 
 
 # Activity developed with JS and React Native
 
-### [Click here and see my project in action!](https://youtube.com/shorts/9WNIqWhZKpo)
+### [Click here and see my project in action!](https://youtube.com/shorts/LERpNAIqnjg)
 
 ## Technologies used
 
