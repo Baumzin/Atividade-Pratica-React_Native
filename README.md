@@ -4,6 +4,8 @@
 
 ### [Cliquem aqui e vejam o meu projeto em funcionamento!](https://youtube.com/shorts/xIC4nZkB5Wg)
 
+### [Cliquem aqui e vejam a resolução dos desafios propostos!](https://youtu.be/H3FT4W1pSzU)
+
 ## Tecnologias utilizadas
 
 - **React Native**: Biblioteca para desenvolvimento de aplicativos móveis.
@@ -81,6 +83,8 @@ Para utilizar o projeto, é necessário ter o React Native e Expo instalados no 
 # Activity developed with JS and React Native
 
 ### [Click here and see my project in action!](https://youtube.com/shorts/xIC4nZkB5Wg)
+
+### [Click here and see the resolution of the proposed challenges!](https://youtu.be/H3FT4W1pSzU)
 
 ## Technologies used
 
